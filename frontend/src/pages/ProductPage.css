@@ -1,0 +1,270 @@
+.product-page {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-link {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #2980b9;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-emoji-large {
+  font-size: 8rem;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.product-category-badge {
+  background-color: #3498db;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.product-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.rating-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  font-size: 1.2rem;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #f39c12;
+  font-size: 1.1rem;
+}
+
+.review-count {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.product-description {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.price-section {
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.tax-note {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.quantity-section label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-btn:hover {
+  background-color: #bdc3c7;
+  transform: none;
+  box-shadow: none;
+}
+
+.quantity-controls input {
+  width: 60px;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #27ae60;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #219a52;
+}
+
+.add-to-cart-btn.added {
+  background-color: #2ecc71;
+}
+
+.view-cart-link {
+  display: block;
+  text-align: center;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.view-cart-link:hover {
+  color: #2980b9;
+}
+
+.reviews-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.reviews-section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 1rem;
+}
+
+.no-reviews {
+  color: #7f8c8d;
+  text-align: center;
+  padding: 2rem;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.review-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #3498db;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.review-stars {
+  font-size: 1.1rem;
+}
+
+.review-comment {
+  color: #555;
+  line-height: 1.6;
+}
+
+.not-found {
+  text-align: center;
+  padding: 4rem;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  padding: 4rem;
+}
