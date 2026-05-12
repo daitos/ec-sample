@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
+import ChatWidget from './components/ChatWidget';
 import './App.css';
 
 function App() {
@@ -52,6 +53,8 @@ function App() {
             <p>&copy; 2026 eコマースストア. All rights reserved.</p>
           </div>
         </footer>
+
+        <ChatWidget onCartUpdate={updateCartCount} />
       </div>
     </Router>
   );
